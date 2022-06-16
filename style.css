@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("./images/sky-sanctuary-zone.png");
+  font-family: 'VT323', monospace;
+}
+
+header {
+    grid-area: header;
+    color: lightcoral;
+    background-color: greenyellow;
+    font-size: 3.5rem;
+    height: 4.4rem;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    background-color: greenyellow;
+    border: solid lightcoral 12px;
+    width: 15vw;
+    font-size: 2rem;
+    color: lightcoral;
+}
+
+.link-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75%;
+}
+
+li:hover {
+    background-color: lightcoral;
+    color: greenyellow;
+}
+
+a {
+    text-decoration: none;
+    color: coral;
+}
+
+.profiles {
+    width: 18vw;
+    border-radius: 25%;
+    background-color: greenyellow;
+    border: solid lightcoral 12px;
+    margin: 15px;
+}
+
+#profile-images {
+    display: flex;
+    justify-content: center;
+}
+
+#who-am-i {
+    background-color: greenyellow;
+    color: coral;
+    border: solid lightcoral 12px;
+    border-radius: 2%;
+    padding: 8px;
+    margin: 12px;
+    font-size: 1.2rem;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-skills {
+    display: flex;
+    background-color: greenyellow;
+    color: coral;
+    border: solid lightcoral 12px;
+    border-radius: 2%;
+    padding: 8px;
+    margin: 12px;
+    width: 37vw;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
